@@ -1,6 +1,6 @@
 {
   "name": "Readit",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Master Electron Course Project",
   "main": "main.js",
   "author": "Stackacademy.tv",
@@ -15,10 +15,19 @@
     "publish": [
       "github"
     ],
-    "certificateFile": "praveen.pfx",
+    "certificateFile": "private/praveen.pfx",
     "verifyUpdateCodeSignature": false,
     "publishername": "praveen"
   },
+  "win":{
+      "publish": [
+        "github"
+      ],
+      "certificateFile": "private/praveen.pfx",
+      "verifyUpdateCodeSignature": false,
+      "publishername": "praveen"
+  },
+
   "dependencies": {
     "electron-log": "^3.0.3",
     "electron-updater": "^4.0.6",
